@@ -1,0 +1,419 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000000;
+	width: 100%;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #B7D034;
+}
+
+#logo{
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 70px;
+	background: url(../images/logo-diseño-01.svg) no-repeat center;
+	display: block;
+}
+
+nav{
+	float: right;
+	padding: 20px;
+}
+
+nav ul {
+	margin-top: 4%;
+}
+
+#menu-icon{
+	display: hidden;
+	width: 32px;
+	height: 32px;
+}
+
+
+hr{
+	width: 90%;
+	border-top: 0.5px solid #B7D034;
+}
+
+
+
+
+
+.greenline{
+	width: 100%;
+	height: 70px;
+	background-color: #B7D034;
+	padding: 1%;
+}
+
+.greenline a{
+	float: right;
+	margin-left: 1%;
+
+}
+
+.greenline .container a img{
+	width: 40px;
+	float: right;
+	margin-right: 1%;
+}
+
+
+
+.containter{
+	width: 80%;
+}
+
+article{
+	margin:3% 0%;
+}
+
+section img:hover{
+	opacity: 0.5;
+}
+
+h1 {
+	color: #B7D034;
+	font-weight: 800;
+	margin: 5px;
+	font-size: 20px;
+}
+
+h3{
+	font-weight: 600;
+	color: white;
+	font-size: 15px;
+	margin: 0;
+}
+
+p{
+	font-weight: 400;
+	color: white;
+	font-size: 13px;
+	margin-top: 3px;
+}
+
+.vertical{
+	background-color: #B7D034;
+	width: 10px;
+	height: 100px;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 5%;
+}
+
+aside{
+	margin: 1% 0%;
+	height: 500px;
+	padding: 1%;
+	float: left;
+}
+
+.horizontal{
+	width: 20%;
+	height: 7px;
+	background-color: #B7D034;
+	float: left;
+	position: relative;
+	top: 18px;
+}
+
+aside h1{
+	font-size: 30px;
+	float: left;
+}
+
+.titular{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+
+.date{
+	width: 100%;
+	float: left;
+	padding: 2%;
+}
+
+.date .number{
+	width: 40%;
+	float: left;
+	margin: 0;
+}
+
+.date .number h1{
+	font-weight: 800;
+	font-size: 60px;
+	margin: 0;
+	margin-left: 13%;
+}
+
+.date .number p{
+	font-weight: 700;
+	font-size: 30px;
+	color: #B7D034;
+	margin: 0;
+	text-align: center;
+	clear: both;
+}
+
+.date .detalle{
+	width: 60%;
+	float: left;
+}
+
+.date .detalle h2{
+	margin: 0;
+	color: white;
+}
+
+.date .detalle p{
+	margin-top: 2%;
+	color: white;
+	word-break: keep-all
+}
+
+aside hr{
+	border-top: 5px solid #B7D034; 
+}
+
+.foto{
+	width: 100%;
+}
+
+.move{
+	background: url(../images/animacion-001.gif) no-repeat center;
+	width: 244px;
+	height: 281px;
+}
+
+.move:hover{
+	opacity: 0.5;
+}
+
+.animation{
+	background: url(../images/animacion-001.gif) no-repeat center;
+	width: 350px;
+	height: 242px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-color: #505050;
+	padding: 2% 1%;
+}
+
+.end{
+	width: 80%;
+	margin: 0 auto;
+}
+
+footer .trabajos{
+	color: white;
+	margin-bottom: 0;
+}
+
+footer .trabajos a{
+	color: #B7D034;
+}
+
+footer .trabajos h1{
+	margin: 0;
+	font-weight: 700;
+	color: white;
+	font-size: 25px;
+	margin-bottom: 1%;
+}
+
+footer .redes{
+	margin-top: 2%;
+	margin-bottom: 0;
+}
+
+footer .redes img{
+	width: 40px;
+	margin-top: 1%;
+	margin-right: 1%;
+}
+
+footer .redes h1{
+	margin: 0;
+	font-weight: 700;
+	color: white;
+	font-size: 25px;
+	margin-bottom: 1%;
+}
+
+footer .container{
+	margin-bottom: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+	.horizontal{
+		width: 15%;
+	}
+
+
+	.date .number h1 {
+    font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	header{
+		position: relative;
+		background-color: black;
+	}
+
+	#menu-icon{
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul{
+		display: none;
+		position: absolute;
+		padding: 1%;
+		background: #505050;
+		right: 0;
+		top: 90%;
+		width: 40%;
+	}
+
+	nav:hover ul{
+		display: block;
+	}
+
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+	}
+
+	.horizontal{
+		width: 39%;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	.date .number h1{
+		margin-left: 35%;
+	}
+
+}
+
+@media only screen and (max-width: 425px){
+	hheader{
+		position: relative;
+		background-color: black;
+	}
+
+	#menu-icon{
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul{
+		display: none;
+		position: absolute;
+		padding: 1%;
+		background: #505050;
+		right: 0;
+		top: 100%;
+		width: 100%;
+	}
+
+	nav:hover ul{
+		display: block;
+	}
+
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+	}
+
+	.horizontal{
+		width: 30%;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	.date .number h1{
+		margin-left: 25%;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.horizontal{
+		width: 23%;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	.date .number h1{
+		margin-left: 17%;
+	}
+}
